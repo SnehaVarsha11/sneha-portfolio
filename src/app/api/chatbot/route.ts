@@ -2,10 +2,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
-// Initialize OpenAI client
-const openai = new OpenAI({
+// Initialize OpenAI client (optional for static export)
+const openai = process.env.OPENAI_API_KEY ? new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-});
+}) : null;
 
 // Portfolio information for context
 const portfolioInfo = `
@@ -44,7 +44,7 @@ LinkedIn: https://www.linkedin.com
 async function generateAIResponse(userMessage: string): Promise<string> {
   try {
     // Use fallback if no API key is set
-    if (!openai) {
+    if (!openai || !process.env.OPENAI_API_KEY) {
       return fallbackResponse(userMessage);
     }
 
