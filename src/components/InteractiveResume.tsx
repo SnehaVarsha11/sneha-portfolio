@@ -137,7 +137,7 @@ export default function InteractiveResume() {
             </Button>
           </div>
           
-          <Link href="#" target="_blank" rel="noopener noreferrer">
+          <Link href="/resume/Sneha_Varsha_Nuthalapati_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="sm" className="flex items-center">
               <Download className="w-4 h-4 mr-2" />
               Download PDF

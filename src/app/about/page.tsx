@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
 import Image from 'next/image';
-import profileImage from '@/assets/images/nikhil.png';
+import profileImage from '@/assets/images/sneha-profile.jpg';
 
 export default function About() {
   return (
@@ -28,6 +28,24 @@ export default function About() {
           </motion.h1>
           
           <div className="flex flex-col lg:flex-row items-center gap-8 mt-12">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="flex-shrink-0"
+            >
+              <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-jarvis-blue-500/30 shadow-jarvis-glow">
+                <Image
+                  src={profileImage}
+                  alt="Sneha Varsha Nuthalapati"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </motion.div>
+            
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
