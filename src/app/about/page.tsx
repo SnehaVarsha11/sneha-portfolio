@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
 import Image from 'next/image';
-import profileImage from '@/assets/images/sneha-profile.jpg';
+import profileImage from '@/assets/images/sneha-profile.jpeg';
 
 export default function About() {
   return (
