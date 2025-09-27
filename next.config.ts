@@ -5,8 +5,6 @@ const nextConfig = {
     reactStrictMode: true,
     output: 'export',
     trailingSlash: true,
-    basePath: '/sneha-portfolio',
-    assetPrefix: '/sneha-portfolio/',
     images: {
         unoptimized: true,
         domains: ["example.com", "upload.wikimedia.org", "logo.clearbit.com"],
