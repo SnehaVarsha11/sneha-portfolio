@@ -83,7 +83,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="mt-6 text-base sm:text-lg text-gray-300 max-w-xl mx-auto"
           >
-            Crafting intelligent, high-performance applications and exploring the frontiers of AI.
+            Crafting intelligent, high-performance applications.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
